@@ -1,0 +1,10 @@
+^D:\CODE\GPU-DISTANCE\DISTANCEAPP\PQP\BUILD\CMAKEFILES\A53E5D0CDFBFC5317C949382DD281563\GENERATE.STAMP.RULE
+setlocal
+D:\Library\CMake\bin\cmake.exe -SD:/Code/gpu-distance/distanceApp/PQP -BD:/Code/gpu-distance/distanceApp/PQP/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Code/gpu-distance/distanceApp/PQP/build/pqp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

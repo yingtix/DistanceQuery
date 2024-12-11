@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.15)
+project(render)
+set(CMAKE_CXX_STANDARD 17)
+set(TARGET_NAME render)
+
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
+set(IMGUI_PATH ${PROJECT_SOURCE_DIR}/include/imgui)
+file(GLOB IMGUI_SOURCE ${IMGUI_PATH}/backends/imgui_impl_glfw.cpp ${IMGUI_PATH}/backends/imgui_impl_opengl3.cpp ${IMGUI_PATH}/imgui*.cpp)
+file(GLOB APP_SOURCE ${PROJECT_SOURCE_DIR}/src/*.cpp ${PROJECT_SOURCE_DIR}/src/*.c)
+
+file(COPY ${PROJECT_SOURCE_DIR}/assets DESTINATION ${PROJECT_BINARY_DIR})
+add_library(render ${IMGUI_SOURCE} ${APP_SOURCE})
+
+target_link_directories(render PUBLIC ${PROJECT_SOURCE_DIR}/lib)
+target_link_libraries(render glfw3 distanceQuery)
+target_include_directories(render PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(render PUBLIC DistancePath)
+target_include_directories(render PUBLIC ${PROJECT_SOURCE_DIR}/include/imgui)
+target_include_directories(render PUBLIC ${PROJECT_SOURCE_DIR}/include/imgui/backends)
+target_include_directories(render PUBLIC ${PROJECT_SOURCE_DIR}/src/include)

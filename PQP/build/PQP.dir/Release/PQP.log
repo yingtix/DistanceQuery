@@ -1,0 +1,20 @@
+﻿  1>Building Custom Rule D:/Code/gpu-distance/distanceApp/PQP/CMakeLists.txt
+  Build.cpp
+  BV.cpp
+  PQP.cpp
+D:\Code\gpu-distance\distanceApp\PQP\src\GetTime.h(53,5): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“../src/PQP.cpp”)
+  
+D:\Code\gpu-distance\distanceApp\PQP\src\PQP.cpp(253,20): warning C4477: “fprintf”: 格式字符串“%x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“PQP_Model *”
+D:\Code\gpu-distance\distanceApp\PQP\src\PQP.cpp(253,20): warning C4313: "fprintf": 格式字符串中的 "%x" 与类型为 "PQP_Model *" 的参数 1 冲突
+D:\Code\gpu-distance\distanceApp\PQP\src\PQP.cpp(254,20): warning C4477: “fprintf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“size_t”
+  D:\Code\gpu-distance\distanceApp\PQP\src\PQP.cpp(254,20):
+  请考虑在格式字符串中使用“%zd”
+  
+D:\Code\gpu-distance\distanceApp\PQP\src\PQP.cpp(256,20): warning C4477: “fprintf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“size_t”
+  D:\Code\gpu-distance\distanceApp\PQP\src\PQP.cpp(256,20):
+  请考虑在格式字符串中使用“%zd”
+  
+  TriDist.cpp
+  正在生成代码...
+  PQP.vcxproj -> D:\Code\gpu-distance\distanceApp\PQP\build\Release\PQP.lib

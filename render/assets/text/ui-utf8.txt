@@ -1,0 +1,8 @@
+refresh_interval:刷新间隔(s)
+draw_line:绘制网格
+show_model0:显示模型0
+show_model1:显示模型1
+sceneScale:场景缩放
+draw_connect_line:绘制连线
+line_width:线宽
+line_color:线条颜色
